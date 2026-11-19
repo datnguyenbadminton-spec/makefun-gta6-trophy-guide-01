@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Legend — GTA VI Trophy Guide &amp; Tracker</title>
+<meta name="description" content="An offline guide and tracker for all 55 Grand Theft Auto VI trophies on PlayStation 5: official names, descriptions and grades, cited guides, a platinum roadmap, missable flags, filters and a spoiler shield.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-title">
+    <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; Unofficial fan guide &middot; Works offline</p>
+    <h1>LEONIDA LEGEND</h1>
+    <p class="tagline">Every one of the 55 trophies, with a cited guide to each — and a tracker that remembers where you are.</p>
+  </div>
+  <div class="progress-card" id="progressCard" aria-label="Progress to the platinum">
+    <p class="progress-big"><span id="progressBig">0 / 55</span><span class="progress-pct" id="progressPct">0%</span></p>
+    <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+    <p class="progress-sub" id="progressSub">0 of 55 earned &middot; Platinum: Vice Got a Price!</p>
+    <ul class="grade-chips" id="gradeChips"></ul>
+  </div>
+</header>
+
+<section class="roadmap" id="roadmap" aria-label="Roadmap to the platinum">
+  <h2>Roadmap to the platinum <span class="roadmap-note">Built from the official descriptions — click a stage to see its trophies</span></h2>
+  <ol class="stages" id="stages"></ol>
+  <p class="save-warning" id="saveWarning">⚠ Save before every chapter — the guides report no mission replay and no New Game Plus. One trophy is reported possibly missable: <button type="button" class="linklike" id="missableJump">Positive Mental Attitude</button>.</p>
+</section>
+
+<div class="toolbar" role="search">
+  <label class="search-box">Search <input id="search" type="search" placeholder="Trophy, mission or keyword — try “bank”" autocomplete="off"></label>
+  <div class="kind-chips" id="kindChips" aria-label="Filter by kind"></div>
+  <label class="grade-filter">Grade
+    <select id="gradeFilter">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <button id="spoilerBtn" type="button" class="toggle" aria-pressed="false">Spoiler shield: OFF</button>
+  <button id="exportBtn" type="button">Export progress</button>
+  <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+  <button id="resetBtn" type="button" class="quiet">Reset</button>
+</div>
+<p class="online-note" id="onlineNote" hidden>There are no online trophies: the whole 55-trophy list is single-player (Exophase / PSNProfiles). Nothing to filter here — pick another kind.</p>
+
+<main class="layout">
+  <section class="list-col" aria-label="Trophy checklist">
+    <p class="list-count" id="listCount">55 trophies</p>
+    <ul class="trophy-list" id="trophyList"></ul>
+  </section>
+  <aside class="detail-col" id="detailCol" aria-label="Trophy guide"></aside>
+</main>
+
+<footer class="foot">
+  <h2>Sources &amp; method</h2>
+  <p>Names, descriptions, grades and hidden flags are the official PlayStation 5 list as published on PlayStation Network, taken 2026-11-18 from <a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/">Exophase</a> and cross-checked with <a href="https://psnprofiles.com/trophies/43531-grand-theft-auto-vi">PSNProfiles</a> and TrueAchievements (see <a href="https://www.planetgta6.com/en/gta-6-trophies/">Planet GTA 6</a>). Every guide is written in our own words for this entry and names its source beside each fact it adds. Where no published source has confirmed a location, method or count yet, the guide says so instead of guessing. Missable flags come from the official descriptions plus the reported Chapter 1 meditation spot (Output Lag, KeenGamer) — flagged as reported, not confirmed.</p>
+  <p>Progress is saved in your browser (localStorage) and never leaves it; export writes a file you own, import reads it back. This guide is unofficial, made by fans, with no Rockstar Games logo, artwork or screenshots of the game. Grand Theft Auto and GTA are trademarks of Take-Two Interactive.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
